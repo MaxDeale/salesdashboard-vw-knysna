@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VW Sales Knysna</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body onload="myLoad()">
+    <h1 id="title">VW Sales <span id="area">Knysna</span></h1>
+
+    <button onclick="getTotalCalls()" id="getDataButton">Retrive Data</button>
+
+    <div class="dashboard">
+      <div class="monday">
+        <h5>Monday: <span class="currentDate"> 12/05/20 </span></h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Extension</th>
+              <th scope="col">Total Calls</th>
+              <th scope="col">3 Min +</th>
+              <th scope="col">Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark Johnson</td>
+              <td>2311</td>
+              <td>28</td>
+              <td>8</td>
+              <td>8%</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob Smith</td>
+              <td>2411</td>
+              <td>38</td>
+              <td>5</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry Goberson</td>
+              <td>2411</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Mary Henders</td>
+              <td>2412</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Sally Smith</td>
+              <td>2211</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+          </tbody>
+          <!-- totals -->
+          <thead class="totals">
+            <tr>
+              <th scope="col">Totals</th>
+              <td></td>
+              <td></td>
+              <td>152</td>
+              <td>19</td>
+              <td>16%</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      <div class="tuesday">
+        <h5>Tuesday: <span class="currentDate">13/05/20</span></h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Extension</th>
+              <th scope="col">Total Calls</th>
+              <th scope="col">3 Min +</th>
+              <th scope="col">Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark Johnson</td>
+              <td>2311</td>
+              <td>28</td>
+              <td>8</td>
+              <td>8%</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob Smith</td>
+              <td>2411</td>
+              <td>38</td>
+              <td>5</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry Goberson</td>
+              <td>2411</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Mary Henders</td>
+              <td>2412</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Sally Smith</td>
+              <td>2211</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+          </tbody>
+          <!-- totals -->
+          <thead class="totals">
+            <tr>
+              <th scope="col">Totals</th>
+              <td></td>
+              <td></td>
+              <td>152</td>
+              <td>19</td>
+              <td>16%</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      <div class="wednesday">
+        <h5>Wednesday: <span class="currentDate">14/05/20</span></h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Extension</th>
+              <th scope="col">Total Calls</th>
+              <th scope="col">3 Min +</th>
+              <th scope="col">Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark Johnson</td>
+              <td>2311</td>
+              <td>28</td>
+              <td>8</td>
+              <td>8%</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob Smith</td>
+              <td>2411</td>
+              <td>38</td>
+              <td>5</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry Goberson</td>
+              <td>2411</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Mary Henders</td>
+              <td>2412</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Sally Smith</td>
+              <td>2211</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+          </tbody>
+          <!-- totals -->
+          <thead class="totals">
+            <tr>
+              <th scope="col">Totals</th>
+              <td></td>
+              <td></td>
+              <td>152</td>
+              <td>19</td>
+              <td>16%</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      <div class="thursday">
+        <h5>Thursday: <span class="currentDate">15/05/20</span></h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Extension</th>
+              <th scope="col">Total Calls</th>
+              <th scope="col">3 Min +</th>
+              <th scope="col">Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark Johnson</td>
+              <td>2311</td>
+              <td>28</td>
+              <td>8</td>
+              <td>8%</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob Smith</td>
+              <td>2411</td>
+              <td>38</td>
+              <td>5</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry Goberson</td>
+              <td>2411</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Mary Henders</td>
+              <td>2412</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Sally Smith</td>
+              <td>2211</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+          </tbody>
+          <!-- totals -->
+          <thead class="totals">
+            <tr>
+              <th scope="col">Totals</th>
+              <td></td>
+              <td></td>
+              <td>152</td>
+              <td>19</td>
+              <td>16%</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+      <div class="friday">
+        <h5>Friday: <span class="currentDate">16/05/20</span></h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Name</th>
+              <th scope="col">Extension</th>
+              <th scope="col">Total Calls</th>
+              <th scope="col">3 Min +</th>
+              <th scope="col">Percentage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark Johnson</td>
+              <td>2311</td>
+              <td>28</td>
+              <td>8</td>
+              <td>8%</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob Smith</td>
+              <td>2411</td>
+              <td>38</td>
+              <td>5</td>
+              <td>12%</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry Goberson</td>
+              <td>2411</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Mary Henders</td>
+              <td>2412</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Sally Smith</td>
+              <td>2211</td>
+              <td>42</td>
+              <td>2</td>
+              <td>5%</td>
+            </tr>
+          </tbody>
+          <!-- totals -->
+          <thead class="totals">
+            <tr>
+              <th scope="col">Totals</th>
+              <td></td>
+              <td></td>
+              <td>152</td>
+              <td>19</td>
+              <td>16%</td>
+            </tr>
+          </thead>
+        </table>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.table {
+  border: 3px solid black;
+}
+
+.table thead {
+  background: red;
+  color: white;
+}
+
+#area {
+  color: red;
+}
+
+#getDataButton {
+  background: black;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+.totals {
+  background: yellow !important;
+  color: black !important;
+  font-weight: bold;
+}
+
+.dashboard {
+  width: 60%;
+}
+
+#title {
+  font-size: 4rem;
+}
+
+.currentDate {
+  font-weight: bold;
+  border: 2px solid red;
+  padding: 0.2rem;
+  border-radius: 10px;
+}
